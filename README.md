@@ -1,4 +1,5 @@
 # Discord-Bot
+*You may not claim this as your own!!*
 Discord Bot with over 400 commands and made for large servers
 
 
