@@ -1,0 +1,1 @@
+delartist.js
