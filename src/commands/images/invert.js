@@ -10,5 +10,5 @@ module.exports = async (client, interaction, args) => {
     const image = await pop.invert(userAvatar);
     let attach = new Discord.MessageAttachment(image, "invert.png");
 
-    interaction.editreply({ files: [attach] })
+    interaction.editReply({ files: [attach] })
 }

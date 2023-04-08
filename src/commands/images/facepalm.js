@@ -10,5 +10,5 @@ module.exports = async (client, interaction, args) => {
     const image = await Canvas.facepalm(userAvatar);
     let attach = new Discord.MessageAttachment(image, "facepalm.png");
 
-    interaction.editreply({ files: [attach] })
+    interaction.editReply({ files: [attach] })
 }
