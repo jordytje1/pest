@@ -1,58 +1,58 @@
 {
     "startLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "shardLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "errorLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "dmLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "voiceLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "serverLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "serverLogs2": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "commandLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "consoleLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "warnLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "voiceErrorLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "creditLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "evalLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     },
     "interactionLogs": {
-        "id": "1094424180910469190",
-        "token": "MTA5NDQyNDE4MDkxMDQ2OTE5MA.GTklV0.mks4GOvH0IRst5gldPnPL8iJg9diLR2azBI904"
+        "id": "",
+        "token": ""
     }
 }
