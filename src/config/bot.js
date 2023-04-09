@@ -8,9 +8,9 @@ module.exports = {
     discord: {
         id: "1061905356701323315",
         prefix: '!',
-        footer: `© Bot 2021 - ${new Date().getFullYear()}`, 
-        botInvite: "https://discord.com/oauth2/authorize?&client_id=QQQQQQQQQQQQ&scope=applications.commands+bot&permissions=8",
-        serverInvite: "https://discord.gg/QQQQQQQQ",
+        footer: `© Almesaody 2021 - ${new Date().getFullYear()}`, 
+        botInvite: `https://discord.com/api/oauth2/authorize?client_id=1094424180910469190&permissions=8&scope=bot%20applications.commands`,
+        serverInvite: "https://discord.gg/XZ6JqGKC",
     },
 
     wordList: `Airplane
