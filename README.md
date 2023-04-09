@@ -40,6 +40,3 @@ This contains: Moderation, Music, Economy and much more!
 | Tickets |
 | Tools |
 | Voice |
-
-*You may not claim this as your own!!*
-**Copyright to DotwoodMedia and CorwinDev**
