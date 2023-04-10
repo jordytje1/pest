@@ -162,9 +162,10 @@ fs.readdirSync('./src/handlers').forEach((dir) => {
 client.login(process.env.DISCORD_TOKEN);
 
 process.on('unhandledRejection', error => {
-    console.error('Unhandled promise rejection', error);
+<<<<<<< HEAD
+    console.error('Unhandled promise rejection:', error);
     if (error.length > 1000) error = error.slice(0, 950) + '... view console for details';
-    if (error.stack.length > 1000) error = error.stack.slice(0, 950) + '... view console for details';
+    if (error.stack.length > 1000) error.stack = error.stack.slice(0, 950) + '... view console for details';
     const embed = new Discord.EmbedBuilder()
         .setTitle(`🚨・Unhandled promise rejection`)
         .addFields([
@@ -175,6 +176,18 @@ process.on('unhandledRejection', error => {
             {
                 name: "Stack error",
                 value: error.stack ? Discord.codeBlock(error.stack) : "No stack error",
+=======
+    const embed = new Discord.EmbedBuilder()
+        .setTitle(`🚨・Unhandled promise rejection`)
+        .setFields([
+            {
+                name: `Error`,
+                value: `\`\`\`${error}\`\`\``,
+            },
+            {
+                name: `Stack error`,
+                value: `\`\`\`${error.stack}\`\`\``,
+>>>>>>> d66e109605f85a2a9d710732e8db419070b0f6e8
             }
         ])
         .setColor(client.config.colors.normal)
@@ -189,9 +202,13 @@ process.on('unhandledRejection', error => {
 process.on('warning', warn => {
     const embed = new Discord.EmbedBuilder()
         .setTitle(`🚨・New warning found`)
+<<<<<<< HEAD
         .addFields([
+=======
+        .setFields([
+>>>>>>> d66e109605f85a2a9d710732e8db419070b0f6e8
             {
-                name: `Warm`,
+                name: `Warn`,
                 value: `\`\`\`${warn}\`\`\``,
             },
         ])
@@ -207,14 +224,18 @@ process.on('warning', warn => {
 client.on('shardError', error => {
     const embed = new Discord.EmbedBuilder()
         .setTitle(`🚨・A websocket connection encountered an error`)
+<<<<<<< HEAD
         .addFields([
+=======
+        .setFields([
+>>>>>>> d66e109605f85a2a9d710732e8db419070b0f6e8
             {
                 name: `Error`,
-                value:  `\`\`\`${error}\`\`\``,
+                value: `\`\`\`${error}\`\`\``,
             },
             {
                 name: `Stack error`,
-                value:  `\`\`\`${error.stack}\`\`\``,
+                value: `\`\`\`${error.stack}\`\`\``,
             }
         ])
         .setColor(client.config.colors.normal)

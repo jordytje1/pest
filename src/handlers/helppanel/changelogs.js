@@ -2,15 +2,19 @@ const Discord = require('discord.js');
 
 module.exports = async (client) => {
     client.on('interactionCreate', async (interaction) => {
+<<<<<<< HEAD
+=======
+        console.log(interaction)
+>>>>>>> d66e109605f85a2a9d710732e8db419070b0f6e8
         if (!interaction.isStringSelectMenu()) return;
 
         if (interaction.customId == "Bot-helppanel") {
             if (interaction.values == "changelogs-Bothelp") {
                 interaction.deferUpdate();
 
-                const row = new Discord.AvtionRowBuilder()
+                const row = new Discord.ActionRowBuilder()
                     .addComponents(
-                        new Discord.ActionRowBuilder()
+                        new Discord.StringSelectMenuBuilder()
                             .setCustomId('Bot-helppanel')
                             .setPlaceholder('❌┆Nothing selected')
                             .addOptions([
@@ -46,7 +50,7 @@ module.exports = async (client) => {
                     desc: `_____`,
                     thumbnail: client.user.avatarURL({ size: 1024 }),
                     fields: [
-                        {
+            	        {
                             name: "📢┆Alert!",
                             value: 'This is the changelogs of the bot, here you can see the changes that have been made to the bot.',
                             inline: false,
