@@ -10,7 +10,7 @@ module.exports = async (client, interaction, args) => {
     const amount = 60
 
     const image = await Canvas.darkness(userAvatar, amount);
-    let attach = new Discord.MessageAttachment(image, "blurred.gif");
+    let attach = new Discord.AttachmentBuilder(image, { name: "blurred.gif" });
 
     interaction.editReply({ files: [attach] })
 }

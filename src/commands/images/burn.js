@@ -11,6 +11,6 @@ module.exports = async (client, interaction, args) => {
 
     const img = await Canvas.burn(userAvatar, lvl);
 
-    let attach = new Discord.MessageAttachment(img, "blurred.png");;
+    let attach = new Discord.AttachmentBuilder(img, { name: "blurred.png" });;
     interaction.editReply({ files: [attach] })
 }
