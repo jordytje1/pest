@@ -321,13 +321,13 @@ module.exports = async (client, message) => {
       new Discord.ButtonBuilder()
         .setLabel("Invite")
         .setURL(
-          "https://discord.com/api/oauth2/authorize?client_id=1094424180910469190&permissions=8&scope=bot%20applications.commands"
+          client.config.discord.botInvite
         )
         .setStyle(Discord.ButtonStyle.Link),
 
       new Discord.ButtonBuilder()
         .setLabel("Support server")
-        .setURL("https://discord.gg/56FZySQaY7")
+        .setURL(client.config.discord.serverInvite)
         .setStyle(Discord.ButtonStyle.Link)
     );
 
@@ -337,11 +337,6 @@ module.exports = async (client, message) => {
           title: "Hi, i'm Bot",
           desc: `Use with commands via Discord ${client.emotes.normal.slash} commands`,
           fields: [
-           {
-                name: "📢┆Alert!",
-                value: 'After more than 1 year we decided to stop Bot on April 15th, for more information go to [this server](https://discord.gg/techpoint)',
-                inline: false,
-            },
             {
               name: "📨┆Invite me",
               value: `Invite Bot in your own server! [Click here](${client.config.discord.botInvite})`,
@@ -404,7 +399,7 @@ module.exports = async (client, message) => {
   if (command) {
     let row = new Discord.ActionRowBuilder().addComponents(
       new Discord.ButtonBuilder()
-        .setLabel("Invite")
+      .setLabel("Invite")
         .setURL(
           "https://discord.com/api/oauth2/authorize?client_id=1094424180910469190&permissions=8&scope=bot%20applications.commands"
         )
@@ -412,7 +407,7 @@ module.exports = async (client, message) => {
 
       new Discord.ButtonBuilder()
         .setLabel("Support server")
-        .setURL("https://discord.gg/56FZySQaY7")
+        .setURL(client.config.discord.serverInvite)
         .setStyle(Discord.ButtonStyle.Link)
     );
 
