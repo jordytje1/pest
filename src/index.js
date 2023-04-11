@@ -3,11 +3,13 @@ const chalk = require('chalk');
 require('dotenv').config('./.env');
 const axios = require('axios');
 // Check if is up to date
-const { version } = require('.././package-lock.json');
-axios.get('https://api.github.com/repos/CorwinDev/Discord-Bot/releases/latest').then(res => {
-    if (res.data.tag_name !== versio) {
+const { version } = require('.././package.json');
+axios.get('https://api.github.com/repos/Almesaody/Discord-Bot/releases/latest').then(res => {
+    if (res.data.tag_name !== version) {
         console.log(chalk.red.bgYellow(`Your bot is not up to date! Please update to the latest version!`, version + ' -> ' + res.data.tag_name));
     }
+}).catch(err => {
+    console.log(chalk.red.bgYellow(`Failed to check if bot is up to date!`));
 });
 
 
