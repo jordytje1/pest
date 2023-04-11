@@ -5,6 +5,6 @@ module.exports = async (client, interaction, args) => {
 
     client.succNormal({
         text: `${text.split("").reverse().join("")}`,
-        type: 'reply'
+        type: 'editreply'
     }, interaction)
 }
