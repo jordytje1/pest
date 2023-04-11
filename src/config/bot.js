@@ -6,7 +6,7 @@ module.exports = {
     },
 
     discord: {
-        id: "1061905356701323315",
+        id: process.env.DISCORD_ID,
         prefix: '!',
         footer: `© Almesaody 2021 - ${new Date().getFullYear()}`, 
         botInvite: `https://discord.com/api/oauth2/authorize?client_id=1094424180910469190&permissions=8&scope=bot%20applications.commands`,
