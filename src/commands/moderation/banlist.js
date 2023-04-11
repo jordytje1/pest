@@ -18,6 +18,6 @@ module.exports = async (client, interaction, args) => {
 
     await client.createLeaderboard(`🔧・Banlist - ${interaction.guild.name}`, list, interaction);
   }).catch(error => {
-    throw error;
+    console.log(error)
   })
 }
