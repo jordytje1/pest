@@ -32,9 +32,9 @@ module.exports = async (client, message) => {
       .setTimestamp();
 
     if (message.attachments.size > 0)
-    embedLogs.addFields(
-      { name: `📃┆Attachments`, value: `${message.attachments.first()?.url}`, inline: false },
-    )
+      embedLogs.addFields(
+        { name: `📃┆Attachments`, value: `${message.attachments.first()?.url}`, inline: false },
+      )
     return dmlog.send({
       username: "Bot DM",
       embeds: [embedLogs],
@@ -401,7 +401,7 @@ module.exports = async (client, message) => {
       new Discord.ButtonBuilder()
       .setLabel("Invite")
         .setURL(
-          "https://discord.com/api/oauth2/authorize?client_id=1094424180910469190&permissions=8&scope=bot%20applications.commands"
+          client.config.discord.botInvite
         )
         .setStyle(Discord.ButtonStyle.Link),
 
@@ -416,11 +416,6 @@ module.exports = async (client, message) => {
         title: "👋・Hi, i'm Bot",
         desc: `Bot is now completely in ${client.emotes.normal.slash} commands. The current message commands have expired! Try our new improved commands and make your server better with Bot!`,
         fields: [
-           {
-                name: "📢┇Alert!",
-                value: 'After more than 1 year we decided to stop Bot on April 15th, for more information go to [this server](https://discord.gg/techpoint)',
-                inline: false,
-            },
             {
             name: "❓┇I don't see any slash commands",
             value:
