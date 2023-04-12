@@ -10,6 +10,8 @@ This contains: Moderation, Music, Economy and much more!
 - FFMPEG
 - Discord bot
 
+Do you like the bot? Leave a star! Or donate at https://github.com/sponsors/Almesaody
+
 ### Replit: https://replit.com/@CorwinDeveloper/Discord-Bot?v=1
 
 ### Discord: https://discord.gg/qHXxpQKC2H
