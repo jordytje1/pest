@@ -12,7 +12,7 @@ This contains: Moderation, Music, Economy and much more!
 
 Do you like the bot? Leave a star! Or donate at https://github.com/sponsors/Almesaody
 
-### Replit: https://replit.com/@CorwinDeveloper/Discord-Bot?v=1
+### Replit: https://replit.com/@CorwinDeveloper/Discord-Bot-v14?v=1
 
 ### Discord: https://discord.gg/qHXxpQKC2H
 
