@@ -9,6 +9,6 @@ module.exports = async (client, interaction, args) => {
     const image = await pop.pooh(splitArgs1, splitArgs2);
     let attach = new Discord.AttachmentBuilder(image, { name: "pooh.png" });
 
-    interaction.editReply({ files: [attach] })
-
+    const embed = client.templateEmbed().setImage("attachment://pooh.png");
+    interaction.editReply({ files: [attach], embeds: [embed] });
 }

@@ -1,3 +1,4 @@
+
 module.exports = async (client, interaction, args) => {
 
     const image = interaction.options.getString('image-url');
@@ -13,5 +14,4 @@ module.exports = async (client, interaction, args) => {
     client.simpleEmbed({
         image: `${image}`
     }, channel)
-
 }
