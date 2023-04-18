@@ -30,7 +30,7 @@ module.exports = (client) => {
 
         setTimeout(() => {
             if (channel.type == "GUILD_STAGE_VOICE") {
-                channel.guild.me.voice.setSuppressed(false).catch(() => { });
+                channel.guild.members.me.voice.setSuppressed(false);
             }
         }, 500)
 
