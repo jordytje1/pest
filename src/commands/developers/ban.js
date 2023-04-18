@@ -12,6 +12,13 @@ module.exports = async (client, interaction, args) => {
     const member = interaction.options.getUser('user');
 
     if (boolean == true) {
+        if (member.id === interaction.user.id) { // add the check here
+            return client.errNormal({
+                error: `You cannot ban yourself from the bot`,
+                type: `editreply`
+            }, interaction);
+        }
+
         Schema.findOne({ User: member.id }, async (err, data) => {
             if (data) {
                 return client.errNormal({
