@@ -6,10 +6,12 @@ const store = require("../../database/models/economyStore");
 
 module.exports = async (client, interaction, args) => {
 
-    client.checkPerms({
-        flags: [Discord.PermissionsBitField.Flags.Administrator],
-        perms: [Discord.PermissionsBitField.Flags.Administrator]
-    }, interaction)
+  const perms = await client.checkPerms({
+    flags: [Discord.PermissionsBitField.Flags.Administrator],
+    perms: [Discord.PermissionsBitField.Flags.Administrator]
+  }, interaction)
+
+  if (perms == false) return;
 
 
     const row = new Discord.ActionRowBuilder() 
@@ -17,12 +19,12 @@ module.exports = async (client, interaction, args) => {
             new Discord.ButtonBuilder()
                 .setCustomId('eco_go')
                 .setEmoji('✅')
-                .setStyle(Discord.buttonStyle.Success),
+                .setStyle(Discord.ButtonStyle.Success),
 
             new Discord.ButtonBuilder()
                 .setCustomId('eco_stop')
                 .setEmoji('❌')
-                .setStyle(Discord.buttonStyle.Danger),
+                .setStyle(Discord.ButtonStyle.Danger),
         );
 
     client.embed({
